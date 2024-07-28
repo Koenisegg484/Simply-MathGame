@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/darkbg"
+    android:orientation="vertical"
+    tools:context=".QuizPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bluish"
+            android:paddingHorizontal="10dp"
+            android:text="Score:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bluish"
+            android:paddingHorizontal="10dp"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bluish"
+            android:paddingHorizontal="10dp"
+            android:text="Life:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bluish"
+            android:paddingHorizontal="10dp"
+            android:text="3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bluish"
+            android:paddingHorizontal="10dp"
+            android:text="Timer:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bluish"
+            android:paddingHorizontal="10dp"
+            android:text="60"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/failure"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/yellowish"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/failure" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:width="300dp"
+            android:background="@color/yellowish"
+            android:maxWidth="350dp"
+            android:maxHeight="200dp"
+            android:minWidth="250dp"
+            android:minHeight="80dp"
+            android:padding="10dp"
+            android:text="Math Question"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="30dp"
+            android:background="@color/yellowish"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint=" Answer Here !!!"
+            android:inputType="text"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Next Question"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
